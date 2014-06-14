@@ -14,9 +14,13 @@ import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
 
+	protected void logStackTrace() {
+    	Log.i("fr.epitez", this.getLocalClassName()+":o:"+Thread.currentThread().getStackTrace()[3].getMethodName());		
+	}
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-    	Log.i("EPITEZ", "MainActivity::onCreate");
+    	logStackTrace();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -29,8 +33,44 @@ public class MainActivity extends ActionBarActivity {
 
 
     @Override
+    protected void onStart() {
+    	logStackTrace();
+    	super.onStart();
+    }
+
+    @Override
+    protected void onRestart() {
+    	logStackTrace();
+    	super.onRestart();
+    }
+
+    @Override
+    protected void onResume() {
+    	logStackTrace();
+    	super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+    	logStackTrace();
+    	super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+    	logStackTrace();
+    	super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+    	logStackTrace();
+    	super.onDestroy();
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-    	Log.i("EPITEZ", "MainActivity::onCreateOptionsMenu");
+    	logStackTrace();
         
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
@@ -39,7 +79,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-    	Log.i("EPITEZ", "MainActivity::onOptionsItemSelected");
+    	logStackTrace();
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
