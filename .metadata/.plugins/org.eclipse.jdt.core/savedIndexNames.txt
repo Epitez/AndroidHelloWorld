@@ -1,0 +1,17 @@
+INDEX VERSION 1.126+/Volumes/Barbarians-Donnees/Users/jeff/Documents/workspace-adt/.metadata/.plugins/org.eclipse.jdt.core
+1273890406.index
+3666859775.index
+411229323.index
+1270315800.index
+3835072091.index
+2263238952.index
+3008001605.index
+2676817551.index
+4058085822.index
+686415682.index
+3473754610.index
+3927879410.index
+4136418727.index
+2890182342.index
+1871047709.index
+2172928603.index
