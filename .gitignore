@@ -1,3 +1,7 @@
 .DS_Store
 .metadata/
 appcompat_v7*/
+HelloWorld/bin/
+HelloWorld/gen/
+HelloWorld/libs/
+*.class
